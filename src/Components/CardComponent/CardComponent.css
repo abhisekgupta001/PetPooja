@@ -1,0 +1,53 @@
+.card-container{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card-section{
+    flex-direction: column;
+}
+
+.card-above{
+    gap: 1rem;
+    min-width: 1200px;
+}
+
+.card-above h1{
+    flex:1;
+}
+
+
+.s-container{
+    flex:3;
+    position: relative;
+}
+
+.s-container .searchBar{
+    width: 100%;
+    font-size: 1.25rem;
+    padding: .5rem 1rem;
+    border: 2px solid #c51f31;
+    outline: none;
+    border-radius: 25px;
+}
+
+.s-container .searchButton{
+    position: absolute;
+    right: 5px;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    outline: none;
+    border: none;
+    background-color: #c51f31;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+.s-container .searchButton:hover{
+    background-color: #700c18;
+}

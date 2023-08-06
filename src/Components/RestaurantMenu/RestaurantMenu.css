@@ -1,0 +1,133 @@
+.menu-wrapper{
+    min-height: 80vh;
+    padding: 2rem 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+
+.left-menu{
+    gap: 3rem;
+    align-items: flex-start;
+    border-bottom:1px solid rgba(130, 130, 130,.1);
+}
+
+
+.menu-image-wrapper{
+    width: 40%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.menu-image-wrapper img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.menu-detail-wrapper{
+    width: 60%;
+}
+
+.menu-detail-wrapper .resID{
+    font-size: 1rem;
+    color: rgb(130, 130, 130);
+}
+
+.menu-detail-wrapper .name{
+    font-size: 4rem;
+    color: rgb(32, 32, 32);
+}
+
+.menu-detail-wrapper .cuisines{
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: rgb(69, 69, 69);
+}
+
+.menu-detail-wrapper .address{
+    margin-top: 1rem;
+    color: rgb(69, 69, 69);
+}
+
+.menu-detail-wrapper .ratings{
+    font-size: 1rem;
+    color: rgb(69, 69, 69);
+    margin: 2rem 0;
+}
+
+.right-menu{
+    margin-top: 2rem;
+}
+
+.right-menu h3{
+    margin-bottom: 1rem;
+}
+
+.right-menu .menu-items-container{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 600px;
+    overflow-y: scroll;
+}
+.right-menu .menu-items-container::-webkit-scrollbar{
+    display: none;
+}
+
+.menu-items{
+    margin: 0 8rem;
+    padding-left: 1rem;
+    background-color: rgb(243, 244, 245);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addToCartContainer{
+    position: relative;
+}
+
+.detail .item-name{
+    font-weight: 600;
+}
+
+.item-rating{
+    color:rgb(199, 199, 199) ;
+}
+
+.menu-items .menu-item-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: rgb(199, 199, 199);
+}
+
+.menu-items .detail{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.addToCartContainer .btn-addToCart{
+    position: absolute;
+    bottom: 0;
+    right: 7px;
+    padding: .25rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(2, 194, 2);
+    border: 1px solid rgb(2, 194, 2);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.addToCartContainer .btn-addToCart:hover{
+    background-color: rgb(2, 194, 2);
+    color: white;
+}

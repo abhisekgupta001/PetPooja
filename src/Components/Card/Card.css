@@ -1,0 +1,41 @@
+.card{
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    box-shadow: 2px 2px 15px 5px rgba(0,0,0,0.1);
+    transition: all .1s ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.05);
+}
+
+.img-container{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.card .detail-container{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    padding-left: .5rem;
+}
+
+.card .rating{
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
