@@ -2,11 +2,13 @@ import CardComponent from "../CardComponent/CardComponent";
 import "./Body.css";
 import { IMG_URL } from "../../Constant";
 import useOnline from "../../utils/useOnline";
+import Hero from "../Hero/Hero";
 
 const Body = () => {
   const isOnline = useOnline();
   return isOnline ? (
     <div className="b-container">
+      <Hero />
       <div className="innerWidth b-wrapper flex">
         <div className="hero-container flex">
           <img
