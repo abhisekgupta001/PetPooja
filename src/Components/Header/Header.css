@@ -20,3 +20,12 @@
     border-bottom: 1px solid #c51f31;
     color: #c51f31;
 }
+.logBtn{
+    background-color:#c51f31;
+    color: white;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin-right:1rem;
+}

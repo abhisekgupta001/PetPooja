@@ -8,14 +8,22 @@ import About from "./Components/About/About";
 import Cart from "./Components/Cart/Cart";
 import RestaurantMenu from "./Components/RestaurantMenu/RestaurantMenu";
 import Contact from "./Components/Contact/Contact";
+import Login from "./Components/Login/Login";
+import { useState } from "react";
+import UserContext from "./utils/UserContext";
 
 function App() {
+  const [user, setUser] = useState({
+    name: "Abhisek Gupta",
+    email: "gabhise@amazon.com",
+  });
+
   return (
-    <>
+    <UserContext.Provider value={{ user: user }}>
       <Header />
       <Outlet />
       <Footer />
-    </>
+    </UserContext.Provider>
   );
 }
 
@@ -44,6 +52,10 @@ export const appRouter = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },

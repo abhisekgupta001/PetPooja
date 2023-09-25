@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
+import { useContext, useState } from "react";
+import UserContext from "../../utils/UserContext";
 
 const Header = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const { user } = useContext(UserContext);
+
   return (
     <header className="h-container">
       <div className="innerWidth h-wrapper flex">
@@ -20,6 +25,20 @@ const Header = () => {
           </li>
           <li>
             <Link to="/cart">Cart</Link>
+          </li>
+          <li>
+            {isLoggedIn ? (
+              <>
+                <button className="logBtn" onClick={() => setIsLoggedIn(false)}>
+                  Logout
+                </button>
+                <span>{user.name}</span>
+              </>
+            ) : (
+              <button className="logBtn" onClick={() => setIsLoggedIn(true)}>
+                Login
+              </button>
+            )}
           </li>
         </ul>
       </div>
